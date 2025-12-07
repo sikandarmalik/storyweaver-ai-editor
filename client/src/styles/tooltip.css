@@ -1,0 +1,116 @@
+/**
+ * Tooltip Styles
+ * Elegant animated tooltips with glassmorphism
+ */
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip-wrapper:hover .tooltip {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tooltip-content {
+  background: rgba(30, 30, 30, 0.95);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* Tooltip Positions */
+.tooltip-top {
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+}
+
+.tooltip-wrapper:hover .tooltip-top {
+  transform: translateX(-50%) scale(1);
+}
+
+.tooltip-top .tooltip-arrow {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-color: rgba(30, 30, 30, 0.95) transparent transparent transparent;
+}
+
+.tooltip-bottom {
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+}
+
+.tooltip-wrapper:hover .tooltip-bottom {
+  transform: translateX(-50%) scale(1);
+}
+
+.tooltip-bottom .tooltip-arrow {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent rgba(30, 30, 30, 0.95) transparent;
+}
+
+.tooltip-left {
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%) scale(0.9);
+}
+
+.tooltip-wrapper:hover .tooltip-left {
+  transform: translateY(-50%) scale(1);
+}
+
+.tooltip-left .tooltip-arrow {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent rgba(30, 30, 30, 0.95);
+}
+
+.tooltip-right {
+  left: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%) scale(0.9);
+}
+
+.tooltip-wrapper:hover .tooltip-right {
+  transform: translateY(-50%) scale(1);
+}
+
+.tooltip-right .tooltip-arrow {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px 6px 6px 0;
+  border-color: transparent rgba(30, 30, 30, 0.95) transparent transparent;
+}
