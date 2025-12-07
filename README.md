@@ -33,7 +33,7 @@ A modern web application showcasing full-stack development skills, AI API integr
 
 ### Demo Video
 
-📹 **[Watch 2-minute demo video](https://github.com/user-attachments/assets/4a19746e-932d-463c-a79d-1ee2968ae64f)**
+📹 **[Watch 2-minute demo video](https://github.com/user-attachments/assets/ccc9e09e-89b5-4d60-b8b1-66a3ff1a54ab)**
 
 The demo showcases:
 - Creating interactive branching stories
